@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BASE Mini APP
 
 Farcaster Frame対応のBASE Mini APPです。Base Japan主催のハンズオンプログラム用に開発されています。
@@ -65,3 +66,59 @@ npm run build
 
 - [Base Documentation](https://docs.base.org/get-started/base)
 - [Farcaster Frames](https://docs.farcaster.xyz/learn/what-is-farcaster/frames)
+=======
+# Farcaster MiniApp - Hello Button
+
+シンプルなFarcaster Frame対応のミニアプリです。
+
+## 機能
+- ボタンクリックで「こんにちは」メッセージを表示
+- Farcaster Frame仕様に完全準拠
+- レスポンシブデザイン
+
+## Vercelデプロイ手順
+
+1. **GitHubリポジトリの作成**
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/yourusername/farcaster-miniapp.git
+   git push -u origin main
+   ```
+
+2. **Vercelでのデプロイ**
+   - [Vercel](https://vercel.com) にアクセス
+   - GitHubアカウントでログイン
+   - "New Project" をクリック
+   - GitHubリポジトリを選択
+   - "Deploy" をクリック
+
+3. **デプロイ後の設定**
+   - デプロイ完了後、Vercelから提供されるURLを確認
+   - `index.html` の `fc:frame:post_url` を実際のVercel URLに更新
+
+## Farcasterでのテスト
+
+1. **Frame Validator**
+   - [Warpcast Frame Validator](https://warpcast.com/~/developers/frames)
+   - デプロイしたURLを入力してテスト
+
+2. **Warpcastで投稿**
+   - WarpcastでURLを投稿
+   - Frameとして表示されることを確認
+
+## ローカル開発
+
+```bash
+npm install
+npm run dev
+```
+
+## API エンドポイント
+
+- `/api/frame` - Farcaster Frame API
+  - GET: 初期Frame表示
+  - POST: ボタンクリック処理
+>>>>>>> 62fb4d2 (second commit)
